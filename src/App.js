@@ -20,6 +20,18 @@ function App() {
 				wrapperClassName='wrapper-class'
 				editorClassName='editor-class'
 				toolbarClassName='toolbar-class'
+				hashtag={{
+					separator: ' ',
+					trigger: '#',
+				}}
+				mention={{
+					separator: ' ',
+					trigger: '@',
+					suggestions: [
+						{ text: 'JavaScript', value: 'javascript', url: 'js' },
+						{ text: 'Golang', value: 'golang', url: 'go' },
+					],
+				}}
 			/>
 		</div>
 	);
